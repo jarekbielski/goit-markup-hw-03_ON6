@@ -176,7 +176,13 @@ img {
 /* ---END-HEADER--- */
 
 /* ---HERO--- */
+.hero-center-side {
+    height: 600px;
+    background: #2F303A;
+}
+
 .modal-btn {
+    font-family: var(--main-font);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -188,35 +194,72 @@ img {
     background: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 10px 41px;
+    margin: auto;
+    cursor: pointer;
 }
 
+
 .header-tittle {
+    font-family: var(--main-font);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.363;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: #FFFFFF;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
+
 }
 
 /* ---END-HERO--- */
 
 /*---DISCRIPTION--- */
+.discription .container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+}
+
+.discription-list,
+.what-we-do {
+    display: flex;
+    align-items: center;
+}
+
 .discription-title {
+    text-decoration: none;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+    padding-bottom: 10px;
 }
 
-.discription,
+.discription-text,
 .portfolio-discription {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: #757575;
+    text-decoration: none;
+}
+
+.dispription-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.dispription-list-item {
+    width: 270px;
 }
 
 .portfolio-discription-title {
@@ -238,30 +281,132 @@ img {
 
 /*---ABOUT--- */
 
+.main-header {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding-bottom: 50px;
+}
+
+.about-list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about-img:not(:last-child) {
+    margin-right: 30px;
+}
+
 /*---END-ABOUT--- */
 
 
 /*---TEAM--- */
-.team-list-name,
-.team-list-job {
+.team {
+    background: #F5F4FA;
+}
+
+.main-header {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+}
+
+.team-list-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.187;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    line-height: 19px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .team-list-job {
     font-weight: 400;
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
     color: #757575;
+    padding-bottom: 30px;
 }
+
+.team-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list-item {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 
 /*---END-TEAM--- */
 
 
 /*---FOOTER--- */
 
+.contact {
+    background-color: #2f303a;
+}
+
+.navigation-logo {
+    color: #FFFFFF;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    text-decoration: none;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.accent-footer {
+    color: var(--main-color);
+}
+
+.contact-list {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.adress-street {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.adress-email-footer,
+.adress-phone-number-footer {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
 
 /*---END-FOOTER--- */
 
