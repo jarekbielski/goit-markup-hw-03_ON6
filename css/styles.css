@@ -28,6 +28,7 @@ ol {
 
 p {
     padding: 0;
+    margin: 0;
 }
 
 .list {
@@ -54,7 +55,8 @@ img {
 
 .container {
     width: 1200px;
-
+    align-items: center;
+    margin: 0 auto;
 }
 
 .section {
@@ -70,13 +72,14 @@ img {
 
 /* ---HEADER--- */
 
+.header {
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+}
+
 .header .container {
     display: flex;
     align-items: center;
-}
-
-.navigation {
-    display: flex;
 }
 
 .navigation_list,
@@ -86,7 +89,6 @@ img {
     align-items: center;
 }
 
-
 .navigation_logo {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -95,6 +97,10 @@ img {
     letter-spacing: 0.03em;
     margin-right: 93px;
     color: var(--main-color);
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    width: 145px;
 }
 
 .accent {
@@ -113,8 +119,10 @@ img {
     padding-bottom: 32px;
 }
 
+
 .navigation-list-link,
-.portfolio-navigation-list {
+.portfolio-navigation-link-accent,
+.portfolio-navigation-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
@@ -125,38 +133,7 @@ img {
 .navigation-list-link:hover,
 .navigation-list-link:focus,
 .portfolio-navigation-link:hover,
-.portfolio-navigation-link:focus {
-    color: var(--main-color)
-}
-
-
-.portfolio-navigation-link-accent {
-    color: #2196F3;
-}
-
-.portfolio-navigation-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-
-
-.adress-link,
-.adress-phone-number-link,
-.adress-email-footer,
-.adress-phone-number-footer {
-    font-style: none;
-    color: #757575;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-}
-
-
+.portfolio-navigation-link:focus,
 .adress-link:hover,
 .adress-link:focus,
 .adress-phone-number-link:hover,
@@ -168,6 +145,33 @@ img {
     color: var(--main-color)
 }
 
+
+.portfolio-navigation-link-accent {
+    color: #2196F3;
+}
+
+
+.adress-link,
+.adress-phone-number-link,
+.adress-email-footer,
+.adress-phone-number-footer {
+    font-style: var(--main-font);
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.adress-link {
+    margin-left: 371px;
+}
+
+.adress-phone-number-link {
+    margin-left: 50px;
+}
 
 /* ---END-HEADER--- */
 
@@ -186,7 +190,7 @@ img {
     border-radius: 4px;
 }
 
-.header {
+.header-tittle {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.363;
