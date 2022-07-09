@@ -54,7 +54,12 @@ img {
 
 .container {
     width: 1200px;
-    
+
+}
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 /* ---END-COMPONENTS--- */
@@ -64,17 +69,48 @@ img {
 
 
 /* ---HEADER--- */
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation_list,
+.portfolio-navigation-list,
+.Contact-header {
+    display: flex;
+    align-items: center;
+}
+
+
 .navigation_logo {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
+    margin-right: 93px;
     color: var(--main-color);
 }
 
 .accent {
     color: #212121
+}
+
+.navigation-list-item:not(:last-child),
+.portfolio-navigation-item:not(:last-child) {
+    margin-right: 46px;
+
+}
+
+.navigation-list-item,
+.portfolio-navigation-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .navigation-list-link,
