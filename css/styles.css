@@ -413,5 +413,46 @@ img {
 
 /*---NAVIGATION-PORTFOLIO--- */
 
+.navigation-portfolio {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-portfolio-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.navigation-portfolio-link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: #F5F4FA;
+    border-radius: 4px;
+    color: #212121;
+    padding: 6px 22px;
+    margin-bottom: 50px;
+    border-style: none;
+}
+
+.navigation-portfolio-link:hover,
+.navigation-portfolio-link:focus {
+    background-color: var(--main-color);
+    color: #ffffff;
+    cursor: pointer;
+}
 
 /*---END-NAVIGATION-PORTFOLIO--- */
+
+
+/*---WHAT-W-DO-PORTFOLIO---*/
+
+.what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+/*---END-WHAT-W-DO-PORTFOLIO---*/
