@@ -6,8 +6,7 @@
 
 body {
     font-family: "Roboto", "Raleway", sans-serif;
-    list-style: none;
-    text-decoration: none;
+
 }
 
 h1,
@@ -24,6 +23,8 @@ ul,
 ol {
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 p {
@@ -57,6 +58,7 @@ img {
     width: 1200px;
     align-items: center;
     margin: 0 auto;
+    padding: 0 15px
 }
 
 .section {
@@ -111,6 +113,10 @@ img {
 .portfolio-navigation-item:not(:last-child) {
     margin-right: 46px;
 
+}
+
+.navigation-portfolio {
+    cursor: pointer;
 }
 
 .navigation-list-item,
@@ -452,17 +458,21 @@ img {
 .what-we-do {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
 }
 
 .what-we-do-list {
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-right: 24px;
-    padding-left: 24px;
-    flex-basis: calc(100% / 3-30px);
+    margin: 15px;
+    flex-basis: calc(100%/3 - 30px);
     background: #FFFFFF;
+
+}
+
+.portfolio-discription-title,
+.portfolio-discription {
     border: 1px solid #EEEEEE;
 }
+
 
 .portfolio-discription-title {
     font-family: var(--main-font);
