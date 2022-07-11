@@ -470,9 +470,13 @@ img {
 
 .portfolio-discription-title,
 .portfolio-discription {
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 
+.portfolio-discription {
+    border-bottom: 1px solid #EEEEEE;
+}
 
 .portfolio-discription-title {
     font-family: var(--main-font);
@@ -483,6 +487,8 @@ img {
     color: #212121;
     padding-top: 20px;
     padding-bottom: 4px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 
@@ -494,6 +500,8 @@ img {
     letter-spacing: 0.03em;
     color: #757575;
     padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 /*---END-WHAT-W-DO-PORTFOLIO---*/
